@@ -447,28 +447,6 @@
         font-size: 0.95rem;
       }
 
-      .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: var(--space-2);
-        margin-top: var(--space-2);
-      }
-      .shot {
-        height: 150px;
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--border-color);
-        background: radial-gradient(
-          circle at top right,
-          rgba(155, 135, 248, 0.12),
-          transparent
-        );
-        display: grid;
-        place-items: center;
-        color: var(--text-tertiary);
-        text-align: center;
-        padding: var(--space-3);
-      }
-
       details {
         border: 1px solid var(--border-color);
         border-radius: var(--radius-lg);
@@ -626,12 +604,14 @@
           "Vite significantly improves development speed.",
         ],
 
-        galleryPlaceholders: [
-          "Hero Section",
-          "Product Section Layout",
-          "Dynamic Product Rendering",
-          "Responsive Mobile View",
-        ],
+ gallery: [
+  { title: "Hero Section", src: "./images/apple1.webp" },
+  { title: "Product Layout", src: "./images/apple2.webp" },
+  { title: "Dynamic Rendering", src: "./images/apple3.webp" },
+  { title: "Mobile View", src: "./images/apple4.webp" }
+],
+
+
 
         faq: [
           {
@@ -915,14 +895,7 @@
         }
       });
 
-      // Gallery placeholders
-      const gg = $("#galleryGrid");
-      CASE.galleryPlaceholders.forEach((txt) => {
-        const box = document.createElement("div");
-        box.className = "shot";
-        box.textContent = txt + "\n(Replace with image later)";
-        gg.appendChild(box);
-      });
+    
 
       // FAQ
       const fw = $("#faqWrap");

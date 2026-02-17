@@ -446,27 +446,7 @@
         font-size: 0.95rem;
       }
 
-      .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: var(--space-2);
-        margin-top: var(--space-2);
-      }
-      .shot {
-        height: 150px;
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--border-color);
-        background: radial-gradient(
-          circle at top right,
-          rgba(155, 135, 248, 0.12),
-          transparent
-        );
-        display: grid;
-        place-items: center;
-        color: var(--text-tertiary);
-        text-align: center;
-        padding: var(--space-3);
-      }
+      
 
       details {
         border: 1px solid var(--border-color);
@@ -623,14 +603,6 @@
           "Consistent spacing and reusable UI patterns improve the whole experience.",
         ],
 
-        galleryPlaceholders: [
-          "Home / Product Listing",
-          "Product Card UI",
-          "Cart Page",
-          "User Login",
-          "Admin Login",
-          "Admin Dashboard",
-        ],
 
         faq: [
           {
@@ -914,14 +886,7 @@
         }
       });
 
-      // Gallery placeholders
-      const gg = $("#galleryGrid");
-      CASE.galleryPlaceholders.forEach((txt) => {
-        const box = document.createElement("div");
-        box.className = "shot";
-        box.textContent = txt + "\n(Replace with image later)";
-        gg.appendChild(box);
-      });
+    
 
       // FAQ
       const fw = $("#faqWrap");

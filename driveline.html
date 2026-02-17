@@ -447,27 +447,8 @@
         font-size: 0.95rem;
       }
 
-      .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: var(--space-2);
-        margin-top: var(--space-2);
-      }
-      .shot {
-        height: 150px;
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--border-color);
-        background: radial-gradient(
-          circle at top right,
-          rgba(155, 135, 248, 0.12),
-          transparent
-        );
-        display: grid;
-        place-items: center;
-        color: var(--text-tertiary);
-        text-align: center;
-        padding: var(--space-3);
-      }
+      
+     
 
       details {
         border: 1px solid var(--border-color);
@@ -631,14 +612,6 @@
           "Language toggle UX works best when kept simple and consistent.",
           "Small scroll animations improve engagement without slowing the site.",
           "Lead flows are stronger when the CTA opens the user’s preferred app (WhatsApp).",
-        ],
-
-        galleryPlaceholders: [
-          "Hero Section (Mobile)",
-          "Services / Sections Layout",
-          "Language Toggle Demo",
-          "WhatsApp Lead Form",
-          "Google Maps Embed",
         ],
 
         faq: [
@@ -922,15 +895,6 @@
           tag2.textContent = t;
           toolTags.appendChild(tag2);
         }
-      });
-
-      // Gallery placeholders
-      const gg = $("#galleryGrid");
-      CASE.galleryPlaceholders.forEach((txt) => {
-        const box = document.createElement("div");
-        box.className = "shot";
-        box.textContent = txt + "\n(Replace with image later)";
-        gg.appendChild(box);
       });
 
       // FAQ

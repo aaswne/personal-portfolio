@@ -389,24 +389,6 @@
     .timeline-item b { display:block; }
     .timeline-item p { color: var(--text-secondary); font-size: 0.95rem; }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-2);
-      margin-top: var(--space-2);
-    }
-    .shot {
-      height: 150px;
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border-color);
-      background: radial-gradient(circle at top right, rgba(155,135,248,0.12), transparent);
-      display: grid;
-      place-items: center;
-      color: var(--text-tertiary);
-      text-align: center;
-      padding: var(--space-3);
-    }
-
     details {
       border: 1px solid var(--border-color);
       border-radius: var(--radius-lg);
@@ -504,12 +486,7 @@
         "Keeping all endpoints in one config file avoids duplication.",
         "GitHub Pages deployment needs correct base path handling."
       ],
-      galleryPlaceholders: [
-        "Desktop Home UI",
-        "Mobile Responsive View",
-        "Banner Section",
-        "Row Scroll Interaction"
-      ],
+    
       faq: [
         { q: "Where does the movie data come from?", a: "From the TMDB API (The Movie Database). The app fetches real-time movie lists per category." },
         { q: "Is this a full-stack project?", a: "This is mainly frontend + API integration. The backend is TMDB, which provides the data." },
@@ -755,14 +732,6 @@
       }
     });
 
-    // Gallery placeholders
-    const gg = $("#galleryGrid");
-    CASE.galleryPlaceholders.forEach((txt) => {
-      const box = document.createElement("div");
-      box.className = "shot";
-      box.textContent = txt + "\n(Replace with image later)";
-      gg.appendChild(box);
-    });
 
     // FAQ
     const fw = $("#faqWrap");
