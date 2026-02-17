@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
+    />
+    <title>AswinKrishna T · frontend UI</title>
+    <!-- premium font stack: Plus Jakarta Sans + Inter fallback -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body data-theme="dark">
+    <div class="gradient-bg"></div>
+
+    <!-- STICKY NAVIGATION -->
+    <nav>
+      <div class="container nav-container">
+        <span class="logo">AswinKrishna T</span>
+        <div class="nav-links">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#bento" class="nav-link">Stack</a>
+          <a href="#featured-projects" class="nav-link">Work</a>
+          <a href="#about" class="nav-link">Journey</a>
+          <a href="#contact" class="nav-link">Let’s Talk</a>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="switch theme">
+          🌙 Dark
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO SECTION - MOBILE PERFECT -->
+      <section
+        id="hero"
+        class="container"
+        style="padding-bottom: var(--space-3)"
+      >
+        <div class="hero">
+          <div class="hero-left">
+            <h1>AswinKrishna T</h1>
+            <div class="hero-bio">
+              Frontend Developer (UI) · JavaScript · React.js
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: var(--space-1);
+                margin-bottom: var(--space-2);
+              "
+            >
+              <span class="chip">📍 Calicut, India</span>
+            </div>
+            <p
+              style="
+                font-size: 1rem;
+                margin-bottom: var(--space-2);
+                color: var(--text-secondary);
+                max-width: 600px;
+              "
+            >
+              <strong
+                >I craft minimal, high-performance interfaces with a bento
+                soul.</strong
+              ><br />
+              Obsessed with micro-interactions and accessible design systems.
+            </p>
+            <div class="cta-group">
+              <a href="#featured-projects" class="btn btn-primary">Projects</a>
+              <a href="#contact" class="btn">Contact</a>
+              <span class="chip available" style="margin-left: 0"
+                >✨ Available for work</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENTO GRID SECTION - FULLY RESPONSIVE -->
+      <section id="bento" class="container">
+        <h2
+          style="
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-2);
+            font-size: 1.8rem;
+          "
+        >
+          Bento · glance
+        </h2>
+        <div class="bento-grid">
+          <!-- Skills card -->
+          <div class="bento-card fade-in">
+            <span style="font-size: 2rem; margin-bottom: var(--space-2)"
+              >⚙️</span
+            >
+            <h3 style="margin-bottom: var(--space-2)">Skills</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px">
+              <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span
+              ><span class="tech-tag">JS</span>
+              <span class="tech-tag">Bootstrap</span
+              ><span class="tech-tag">npm</span
+              ><span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span
+              ><span class="tech-tag">REACT JS</span
+              ><span class="tech-tag">UI Eng</span>
+              <span class="tech-tag">API</span><span class="tech-tag">A11y</span
+              ><span class="tech-tag">Vite</span>
+            </div>
+          </div>
+          <!-- About snippet -->
+          <div class="bento-card fade-in">
+            <span style="font-size: 2rem; margin-bottom: var(--space-2)"
+              >🧑‍💻</span
+            >
+            <h3 style="margin-bottom: var(--space-1)">
+              Self-taught & relentless
+            </h3>
+            <p style="color: var(--text-secondary)">
+              Frontend Developer focused on building responsive, pixel-perfect,
+              and intuitive web experiences. ⚡
+            </p>
+          </div>
+          <!-- Tools -->
+          <div class="bento-card fade-in">
+            <span style="font-size: 2rem; margin-bottom: var(--space-2)"
+              >🛠️</span
+            >
+            <h3 style="margin-bottom: var(--space-2)">Toolbox</h3>
+            <p style="color: var(--text-secondary)">
+              VS Code, Figma, Storybook, Chrome DevTools, Webpack, Vite,Postman,Prettier,Netlify
+            </p>
+          </div>
+          <!-- Stats: GitHub style -->
+          <div class="bento-card fade-in">
+            <span style="font-size: 2rem; margin-bottom: var(--space-2)"
+              >📊</span
+            >
+            <h3 style="margin-bottom: var(--space-2)">GitHub pulse</h3>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap">
+              <span
+                style="
+                  background: var(--accent-soft);
+                  padding: 2px 12px;
+                  border-radius: 20px;
+                "
+                >14 repos</span
+              >
+              <span
+                style="
+                  background: var(--accent-soft);
+                  padding: 2px 12px;
+                  border-radius: 20px;
+                "
+                >320+ commits</span
+              >
+              <span
+                style="
+                  background: var(--accent-soft);
+                  padding: 2px 12px;
+                  border-radius: 20px;
+                "
+                >6 pinned</span
+              >
+            </div>
+          </div>
+          <!-- Contact quick links card - mobile spans full -->
+          <div class="bento-card fade-in">
+            <span style="font-size: 2rem; margin-bottom: var(--space-2)"
+              >📬</span
+            >
+
+            <h3
+              style="
+                margin-bottom: 12px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: -0.3px;
+              "
+            >
+              Quick Contact
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <a
+                href="mailto:aswinchristy1234@gmail.com"
+                style="
+                  color: var(--text-primary);
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  font-weight: 500;
+                  transition: color 0.2s ease;
+                "
+                onmouseover="this.style.color = 'var(--accent)'"
+                onmouseout="this.style.color = 'var(--text-primary)'"
+              >
+                📧 aswinchristy1234@gmail.com
+              </a>
+
+              <a
+                href="https://aswinkrishna.in"
+                target="_blank"
+                style="
+                  color: var(--text-primary);
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  font-weight: 500;
+                  transition: color 0.2s ease;
+                "
+                onmouseover="this.style.color = 'var(--accent)'"
+                onmouseout="this.style.color = 'var(--text-primary)'"
+              >
+                🌐 aswinkrishna.in
+              </a>
+
+              <a
+                href="https://github.com/aaswne"
+                target="_blank"
+                style="
+                  color: var(--text-primary);
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  font-weight: 500;
+                  transition: color 0.2s ease;
+                "
+                onmouseover="this.style.color = 'var(--accent)'"
+                onmouseout="this.style.color = 'var(--text-primary)'"
+              >
+                🐙 @aaswne
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS + SEARCH / FILTER - FULLY MOBILE ADAPTED -->
+      <section id="featured-projects" class="container">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            margin-bottom: var(--space-2);
+          "
+        >
+          <h2 style="font-size: 1.8rem; font-weight: 600">Featured projects</h2>
+          <!-- search input + filter chips (mobile stacked) -->
+          <div class="filter-section">
+            <input
+              type="text"
+              id="projectSearch"
+              placeholder="Search by title or description..."
+              style="
+                width: 100%;
+                background: var(--bg-card);
+                border-radius: 40px;
+              "
+            />
+            <div class="filter-chips-wrapper">
+              <button class="chip filter-chip active" data-filter="all">
+                All
+              </button>
+              <button class="chip filter-chip" data-filter="React">
+                React
+              </button>
+              <button class="chip filter-chip" data-filter="UI">UI</button>
+              <button class="chip filter-chip" data-filter="ecommerce">
+                ecommerce
+              </button>
+            </div>
+            <select
+              id="sortProjects"
+              class="chip"
+              style="background: var(--bg-card); padding: 0.5rem 1rem"
+            >
+              <option value="featured">⭐ Featured</option>
+              <option value="newest">🆕 Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!-- ABOUT + TIMELINE - RESPONSIVE STACK -->
+      <section id="about" class="container">
+        <h2 style="font-size: 1.8rem; margin-bottom: var(--space-3)">
+          About & journey
+        </h2>
+        <div class="about-grid">
+          <div>
+            <p
+              style="
+                font-size: 1.1rem;
+                margin-bottom: var(--space-3);
+                color: var(--text-secondary);
+              "
+            >
+              I’m AswinKrishna, frontend developer from Calicut. I believe great
+              UI is invisible — fast, accessible, and delightful.
+            </p>
+            <p style="margin-bottom: var(--space-3)">
+              Self-taught since 2020. Started with Bootstrap, now deep in React
+              & design systems. I contribute to open source and maintain UI
+              components.
+            </p>
+            <span class="chip">#buildinpublic</span>
+          </div>
+          <div>
+            <h3 style="margin-bottom: var(--space-3)">Timeline</h3>
+            <div class="timeline-item">
+              <div style="font-weight: 800">2022</div>
+              <div>Frontend internship → full-time, built 3 dashboards</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-weight: 800">2023</div>
+              <div>Freelance — ecommerce template, Netflix clone (React)</div>
+            </div>
+            <div class="timeline-item">
+              <div style="font-weight: 800">2024</div>
+              <div>Sharpened a11y + perf; bento portfolio</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT + FORM - MOBILE OPTIMIZED -->
+      <section
+        id="contact"
+        class="container"
+        style="padding-bottom: var(--space-6)"
+      >
+        <h2 style="font-size: 1.8rem; margin-bottom: var(--space-1)">
+          Let’s connect
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3)">
+          Fill the form or directly mail — I reply within 24h.
+        </p>
+        <div class="contact-grid">
+          <div>
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="AswinKrishna"
+                  required
+                />
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="hello@aswinkrishna.in"
+                  required
+                />
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="4"
+                  placeholder="I'd like to talk about..."
+                  required
+                ></textarea>
+                <span class="error-msg"></span>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Send message
+              </button>
+              <p
+                id="formFeedback"
+                style="margin-top: var(--space-2); font-size: 0.85rem"
+              ></p>
+            </form>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; gap: var(--space-2)"
+          >
+           <div style="display: flex; flex-direction: column; gap: 10px">
+  <p style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">
+    🟢 Available for Frontend Roles
+  </p>
+
+  <p style="font-size: 0.9rem; color: var(--text-secondary);">
+    Open to remote & on-site opportunities.
+  </p>
+
+  <p style="font-size: 0.9rem; color: var(--text-secondary);">
+    Based in Calicut, India.
+  </p>
+</div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      style="
+        margin-top: 80px;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+      "
+    >
+      <div
+        style="
+          font-family: &quot;Fira Code&quot;, monospace;
+          font-size: 0.9rem;
+          color: var(--text-secondary);
+          letter-spacing: 0.5px;
+        "
+      >
+        <span style="color: var(--accent)">&lt;/&gt;</span>
+        Built with code & coffee ☕
+      </div>
+
+      <div
+        style="
+          margin-top: 12px;
+          font-size: 0.85rem;
+          color: rgba(255, 255, 255, 0.4);
+        "
+      >
+        © 2026 Aswin Krishna — All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
