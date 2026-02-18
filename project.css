@@ -185,7 +185,7 @@ nav {
 }
 .theme-toggle:hover { background: var(--accent-soft); }
 
-/* CARDS (same as your bento/project cards) */
+/* CARDS */
 .bento-card {
   background: var(--bg-card);
   backdrop-filter: blur(10px);
@@ -403,7 +403,6 @@ details p { margin-top: var(--space-2); color: var(--text-secondary); }
   .container { padding: 0 var(--space-4); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .two { grid-template-columns: 1fr 1fr; }
-  .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* DESKTOP */
@@ -414,5 +413,38 @@ details p { margin-top: var(--space-2); color: var(--text-secondary); }
   .toc { display: block; }
   .toc-mobile { display: none; }
   .stats-grid { grid-template-columns: repeat(4, 1fr); }
-  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ✅ MOBILE NAV FIX (CENTER + SMALL HEIGHT + NO OVERFLOW) */
+@media (max-width: 640px) {
+  nav {
+    padding: 0.5rem 0;              /* reduce navbar height */
+  }
+
+  .nav-container {
+    flex-direction: column;         /* stack logo + actions */
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;        /* center buttons */
+    gap: 0.5rem;
+    flex-wrap: wrap;                /* allow wrapping */
+  }
+
+  .btn,
+  .theme-toggle {
+    padding: 0.45rem 0.9rem;        /* smaller buttons */
+    font-size: 0.8rem;
+  }
+
+  /* prevent any accidental horizontal scroll */
+  body { overflow-x: hidden; }
 }
