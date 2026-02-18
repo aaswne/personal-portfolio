@@ -193,14 +193,13 @@ nav {
   border-radius: var(--radius-lg);
   padding: var(--space-4);
   box-shadow: var(--shadow-sm), var(--glow);
-  transition: var(--transition);
   border: 1px solid var(--border-color);
 }
-.bento-card:hover {
-  background: var(--bg-card-solid);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(155, 135, 248, 0.3);
+
+.content-grid{
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px);
 }
 
 .chip {
