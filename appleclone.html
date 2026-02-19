@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,11 @@
       name="description"
       content="A premium Apple Store clone built with React + Vite, featuring dynamic product rendering, clean component architecture, and a modern Apple-inspired UI design."
     />
+
+    <script>
+      const savedTheme = localStorage.getItem("theme") || "light"
+      document.documentElement.setAttribute("data-theme" ,savedTheme)
+    </script>
 
     <link rel="stylesheet" href="project.css" />
   </head>
