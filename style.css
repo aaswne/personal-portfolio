@@ -431,3 +431,7 @@
   .spacer{
     height: 10vh;
   }
+
+  .atext{
+    text-decoration: none;
+  }
